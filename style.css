@@ -1,0 +1,33 @@
+.img__wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .img__description {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.text__body {
+    color: black;
+    font-size: 12px;
+}
